@@ -32,6 +32,16 @@ public class NavegationController {
         return "perfil";
     }
 
+    @GetMapping("/error500")
+    public String show500Error(Model model){
+        return "error500";
+    }
+
+    @GetMapping("/ayuda")
+    public String showAyuda(Model model){
+        return "ayuda";
+    }
+
     @GetMapping("/ajustes")
     public String showAjustes(Model model){
         return "ajustes";
